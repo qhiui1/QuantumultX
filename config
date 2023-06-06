@@ -86,7 +86,7 @@ url-latency-benchmark=🇺🇸United States, server-tag-regex=(?=.*(美|美国|�
 
 [server_remote]
 # 节点远程订阅
-https://gclmxt.xyz/?L2Rvd25sb2FkQ29uZmlnL05vZGVMaXN0LmFzcHg/cXg9dHJvamFuJnVyaz0zYTBkNGEwMS1kYTcwLTRjYWEtOWMyZC01NmJkNzk5MWIwYjMmbW09MTAyNjU3JjkxMmE5, tag=Nexitally, update-interval=86400, opt-parser=true, img-url=https://nxboom.com/images/NA_Logo.png, enabled=true
+https://gclmxt.xyz/?L2Rvd25sb2FkQ29uZmlnL05vZGVMaXN0LmFzcHg/cXg9dHJvamFuJnVyaz0zYTBkNGEwMS1kYTcwLTRjYWEtOWMyZC01NmJkNzk5MWIwYjMmbW09MTAyNjU3JjJiZTFjMWMyMTFiZTQyYmNiNzE4ODczNDZjNDhhZA==, tag=Nexitally, update-interval=86400, opt-parser=true, img-url=https://nxboom.com/images/NA_Logo.png, enabled=true
 https://git.io/JfNq3, tag=网易云解锁灰色音乐, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png, update-interval=86400, opt-parser=true, enabled=true
 
 [filter_remote]
