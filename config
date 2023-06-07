@@ -86,7 +86,7 @@ url-latency-benchmark=🇺🇸United States, server-tag-regex=(?=.*(美|美国|�
 
 [server_remote]
 # 节点远程订阅
-https://gclmxt.xyz/?L2Rvd25sb2FkQ29uZmlnL05vZGVMaXN0LmFzcHg/cXg9dHJvamFuJnVyaz0zYTBkNGEwMS1kYTcwLTRjYWEtOWMyZC01NmJkNzk5MWIwYjMmbW09MTAyNjU3JjJiZTFjMWMyMTFiZTQyYmNiNzE4ODczNDZjNDhhZA==, tag=Nexitally, update-interval=86400, opt-parser=true, img-url=https://nxboom.com/images/NA_Logo.png, enabled=true
+https://gclmxt.xyz/?L2Rvd25sb2FkQ29uZmlnL05vZGVMaXN0LmFzcHg/cXg9dHJvamFuJnVyaz0zYTBkNGEwMS1kYTcwLTRjYWEtOWMyZC01NmJkNzk5MWIwYjMmbW09MTAyNjU3JjJiZTFjMWMyMTFiZTQyYmNiNzE4ODczNDZjNDhhZA==#info=1&emoji=2, tag=Nexitally, update-interval=86400, opt-parser=true, img-url=https://nxboom.com/images/NA_Logo.png, enabled=true
 
 [filter_remote]
 # 远程分流规则策略组
