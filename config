@@ -46,7 +46,6 @@ address=/mtalk.google.com/108.177.125.188
 # Others 为其他规则，若前边的规则都没有被匹配到，则听从此策略组的规定。
 # 策略想走特定节点或套娃，请长按分流策略组自行添加节点/策略组
 # 自动测速策略组只包含常用地区HK,JP,SG,KR,US,TW, 其他地区和游戏节点建议在Proxy选择然后改变分流策略
-static=NetEaseMusic, 延迟最低, direct, proxy, 🇭🇰Hong Kong, 🇨🇳Taiwan, 🇯🇵Japan, 🇰🇷Korea, 🇸🇬Singapore, 🇺🇸United States, server-tag-regex=(?=.*(music|𝐌𝐮𝐬𝐢𝐜|Unlock|网易云|云音乐|Music|Netease|🎶|解锁)), img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
 static=漏网之鱼, 延迟最低, direct, proxy, 🇭🇰Hong Kong, 🇨🇳Taiwan, 🇯🇵Japan, 🇰🇷Korea, 🇸🇬Singapore, 🇺🇸United States, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 static=大陆网站, 延迟最低, direct, proxy, 🇭🇰Hong Kong, 🇨🇳Taiwan, 🇯🇵Japan, 🇰🇷Korea, 🇸🇬Singapore, 🇺🇸United States, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Domestic.png
 static=境外网站, 延迟最低, direct, proxy, 🇭🇰Hong Kong, 🇨🇳Taiwan, 🇯🇵Japan, 🇰🇷Korea, 🇸🇬Singapore, 🇺🇸United States, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
@@ -80,7 +79,7 @@ url-latency-benchmark=🇨🇳Taiwan, server-tag-regex=(?=.*(台|臺|台湾|台�
 url-latency-benchmark=🇯🇵Japan, server-tag-regex=(?=.*(日|日本|JP|(?i)Japan))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, check-interval=1800, tolerance=10, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 url-latency-benchmark=🇰🇷Korea, server-tag-regex=(?=.*(韓|韩|韩国|韓國|南朝鲜|KR|(?i)Korea))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, check-interval=1800, tolerance=10, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
 url-latency-benchmark=🇸🇬Singapore, server-tag-regex=(?=.*(坡|新加坡|狮城|SG|(?i)Singapore))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, check-interval=1800, tolerance=10, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-url-latency-benchmark=🇺🇸United States, server-tag-regex=(?=.*(美|美国|美國|US|(?i)States|American))^((?!(专线|手游|游戏|网易云|云音乐|🎶(?i)IPLC|IEPL|game|music|𝐌𝐮𝐬𝐢𝐜|Unbolck|Music|Netease)).)*$, check-interval=1800, tolerance=0, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+url-latency-benchmark=🇺🇸United States, server-tag-regex=(?=.*(美|美国|美國|US|(?i)States|American))^((?!(专线|手游|游戏|网易云|云音乐|🎶(?i)IPLC|IEPL|game|music|𝐌𝐮𝐬𝐢𝐜|Unbolck|Music|Netease)).)*$, check-interval=1800, tolerance=10, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 
 [server_local]
 # 本地服务器部分, 自行添加即可
@@ -88,13 +87,11 @@ url-latency-benchmark=🇺🇸United States, server-tag-regex=(?=.*(美|美国|�
 [server_remote]
 # 节点远程订阅
 https://gclmxt.xyz/?L2Rvd25sb2FkQ29uZmlnL05vZGVMaXN0LmFzcHg/cXg9dHJvamFuJnVyaz0zYTBkNGEwMS1kYTcwLTRjYWEtOWMyZC01NmJkNzk5MWIwYjMmbW09MTAyNjU3JjJiZTFjMWMyMTFiZTQyYmNiNzE4ODczNDZjNDhhZA==, tag=Nexitally, update-interval=86400, opt-parser=true, img-url=https://nxboom.com/images/NA_Logo.png, enabled=true
-https://git.io/JfNq3, tag=网易云解锁灰色音乐, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png, update-interval=86400, opt-parser=true, enabled=true
 
 [filter_remote]
 # 远程分流规则策略组
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple (Apple服务), force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/yawenchim/QuantumultX-mix/master/rule/Cryptocurrency.list, tag=Cryptocurrency（数字货币）, force-policy=数字货币, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/NetEaseMusic/NetEaseMusic.list, tag=NetEaseMusic (解锁网易云灰色音乐), force-policy=NetEaseMusic, update-interval=86400, opt-parser=false, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=AdBlock (广告拦截), force-policy=广告拦截, update-interval=86400, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMedia/ChinaMedia.list, tag=CNMedia (大陆流媒体), force-policy=大陆流媒体, update-interval=86400, opt-parser=false, enabled=true
 https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Instagram/Instagram.list, tag=Instagram, force-policy=Instagram, update-interval=86400, opt-parser=false, enabled=true
@@ -155,25 +152,3 @@ ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 geoip, cn, direct
 final, 漏网之鱼
-
-[rewrite_remote]
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=blackmatrix7去广告规则, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Advertising/Advertising.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机Google重定向, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/external/QuantumultX/TikTokUnlock/TikTokJP/TikTokJP.conf, tag=解锁Tiktok(地址中JP可替换成TW,US,UK,KR), update-interval=86400, opt-parser=true, enabled=false
-https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, tag=淘宝京东比价, update-interval=86400, opt-parser=true, enabled=false
-
-[rewrite_local]
-# 本地复写规则
-
-[task_local]
-# 构造请求，脚本区，自行找库添加，仅保留流媒体解锁查询
-event-interaction https://ghproxy.com/https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
-
-[http_backend]
-https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=BoxJS, path=^/, enabled=true
-
-[mitm]
-hostname= rdcseason.m.jd.com, *.googlevideo.com, trade-acs.m.taobao.com, as.xiaojukeji.com, wq.jd.com, api.m.jd.com, *.google.cn
-# passphrase和p12代为证书&主机名部分, 更新配置前可把旧的配置中passphrase和p12代码拷贝下来, 导入新的配置文件把内容粘贴在对应位置就不用重装证书了
