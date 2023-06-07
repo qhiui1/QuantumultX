@@ -154,15 +154,23 @@ geoip, cn, direct
 final, 漏网之鱼
 
 [rewrite_remote]
-# 远程复写规则
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=blackmatrix7去广告规则, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Advertising/Advertising.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机Google重定向, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/external/QuantumultX/TikTokUnlock/TikTokJP/TikTokJP.conf, tag=解锁Tiktok(地址中JP可替换成TW,US,UK,KR), update-interval=86400, opt-parser=true, enabled=false
+https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, tag=淘宝京东比价, update-interval=86400, opt-parser=true, enabled=false
 
 [rewrite_local]
 # 本地复写规则
 
 [task_local]
 # 构造请求，脚本区，自行找库添加，仅保留流媒体解锁查询
+event-interaction https://ghproxy.com/https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
 
 [http_backend]
+https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=BoxJS, path=^/, enabled=true
 
 [mitm]
+hostname= rdcseason.m.jd.com, *.googlevideo.com, trade-acs.m.taobao.com, as.xiaojukeji.com, wq.jd.com, api.m.jd.com, *.google.cn
 # passphrase和p12代为证书&主机名部分, 更新配置前可把旧的配置中passphrase和p12代码拷贝下来, 导入新的配置文件把内容粘贴在对应位置就不用重装证书了
